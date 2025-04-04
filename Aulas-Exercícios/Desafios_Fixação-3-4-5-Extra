@@ -1,0 +1,132 @@
+✅ Mini-desafio 3 – Par ou Ímpar
+Crie um script chamado par_ou_impar.php que:
+Tenha uma variável chamada $numero, com um valor numérico qualquer.
+Verifique se esse número é par ou ímpar.
+Exiba a mensagem:
+"O número X é par" ou
+"O número X é ímpar"
+🧠 Dica: use o operador % (módulo) pra verificar se sobra resto da divisão por 2.
+
+Code:
+<?php
+$numero = 5;
+$resultado = $numero % 2;
+
+if ($resultado == 0){
+	echo "O número $numero, é par\n";
+} else {
+	echo "O número $numero, é ímpar\n";
+}
+?>
+
+Saída:
+O número 5, é ímpar
+
+
+✅ Mini-desafio 4 – Maior número
+Crie um script chamado maior_numero.php que:
+Tenha duas variáveis: $a e $b, com dois valores diferentes.
+Verifique qual número é maior.
+Exiba a mensagem:
+"O maior número é X"
+Ou diga "Os números são iguais" caso tenham o mesmo valor (testa também esse caso!).
+
+Code:
+<?php
+
+$a = 5;
+$b = 5;
+
+if($a > $b) {
+	echo "O número $a é maior que $b\n";
+} elseif($a < $b){
+	echo "O número $b é maior que $a\n";
+} else{
+	echo "Os número são iguais\n";
+}
+
+?>
+
+Saída:
+Os número são iguais
+
+✅ Mini-desafio 5 – Validação de acesso
+Crie um script chamado acesso.php que:
+Tenha duas variáveis:
+$usuario = "flavia"
+$senha = "1234"
+Simule uma tentativa de login com:
+$usuarioDigitado = "flavia"
+$senhaDigitada = "1234"
+Se os dados digitados forem iguais aos corretos, exiba:
+"Acesso permitido!"
+Caso contrário:
+"Acesso negado!"
+🧠 Dica: Aqui você pode usar && para validar as duas condições juntas.
+
+Code:
+<?php
+$usuario = readline("Digite seu usuário: ");
+$senha = readline("Digite sua senha: ");
+
+if ($usuario == "flaviasouza" && $senha == "Husky@123"){
+	echo "Login Aprovado\n";
+} else
+	echo "Login Negado\n";
+?>
+
+Saída1:
+Digite sua senha: Husky@123
+Login Aprovado
+
+Saída2:
+Digite seu usuário: flavia
+Digite sua senha: 123
+Login Negado
+
+
+Observações:
+- No terminal utilizamos readline quando queremos que usuário escreva algo, mais para WEB o processo é diferente, usando $_POST ou $_GET 
+com formulários HTML. Mas como aqui é terminal, readline() resolve lindamente!
+- O mesmo vale para \n , só utilizei porque meus testes estão via terminal, para WEB utilizasse <br>
+
+
+✅ Mini-desafio EXTRA – Verificação de notas
+Crie um script chamado verifica_nota.php que:
+Tenha uma variável $nota, com valor entre 0 e 10.
+Verifique a situação do aluno conforme as regras:
+Se a nota for maior ou igual a 7, diga: "Aprovado!"
+Se for entre 5 e 6.9, diga: "Recuperação!"
+Se for menor que 5, diga: "Reprovado!"
+🧠 Dica: Você pode testar com diferentes valores como:
+
+Code:
+<?php
+$nota = readline ("Digite sua nota de 0 a 10: ");
+
+if ($nota >= 7){
+	echo "Você foi APROVADO, divirta-se nas férias!\n";
+} elseif($nota >= 5 && $nota <= 6.9){
+	echo "Férias? Não, RECUPERAÇÃO, estude mais ano que vem!\n";
+} else {
+	echo "Xii, alguém vai ter que voltar pra minha sala, REPROVADO!!\n";
+}
+
+?>
+
+Saída1:
+Digite sua nota de 0 a 10: 5
+Férias? Não, RECUPERAÇÃO, estude mais ano que vem!
+
+Saída2:
+Digite sua nota de 0 a 10: 10
+Você foi APROVADO, divirta-se nas férias!
+
+Saída3:
+Digite sua nota de 0 a 10: 4.9
+Xii, alguém vai ter que voltar pra minha sala, REPROVADO!!
+
+# Já passamos por isso mais vale reforçar!!
+- \n é usado apenas para o terminal caso queria na WEB use <br>
+- Funciona da mesma forma para o readline(), caso queira na WEB use $_POST ou $_GET 
+- Não se esqueça quando for comparar 2 valores $nota >= 5 && $nota <= 6.9 | precisa sempre repetir a variável, no nosso caso $nota
