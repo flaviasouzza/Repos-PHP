@@ -1,0 +1,113 @@
+## 📌 Aula 1 - Introdução ao PHP
+PHP (Hypertext Preprocessor) é uma linguagem de programação do lado do servidor. Isso significa que o código PHP é processado no servidor antes de ser enviado para o navegador do usuário.
+
+1️⃣ Como rodar PHP no seu ambiente
+
+## 💻 Configurando o ambiente no Ubuntu
+Verificar se o PHP está instalado:
+Abra o terminal e digite:
+
+php -v
+
+Se aparecer a versão do PHP, ele já está instalado. Caso contrário, instale com:
+
+sudo apt update 
+sudo apt upgrade 
+sudo apt install php
+
+# Depois de instalado vamos criar um arquivo, então crie uma pasta em seu computador onde vai armazenar todas as informações do curso, aulas, exercicios entre outros | exemplo sua home:
+
+cd ~
+mkdir meu_projeto && cd meu_projeto
+nano index.php
+
+# No Linux, o comando mkdir (make directory) cria um diretório, que na prática é o mesmo que uma pasta.
+# O nano vai abrir um editor dentro do terminal:
+  Se o arquivo já existir, ele será aberto para edição.
+  Se o arquivo não existir, ele será criado automaticamente.
+
+# Então após dar ok no nano, como não temos o arquivo criado ele vai criar automaticamente, digite o texto:
+
+<?php
+  echo "Olá, Flavia! Seja bem-vinda ao PHP!";
+?>
+
+Explicação:
+
+<?php ?> - Tag de Abertura e Fechamento do PHP
+echo - Exibir Saída A função echo é usada para imprimir informações na tela. Ela pode exibir textos, números, variáveis e até resultados de expressões.
+
+# Caso queira visualizar o arquivo no terminal sem precisar de abrir ele basta digitar:
+
+cat index.php
+
+# Agora para visualizar ele na web primeiro coloque no terminal:
+php -S localhost:8000
+
+Depois no navegador coloque:
+http://localhost:8000/index.php
+
+Obs: tem que aparecer exatamente o que digitamos:  "Olá, Flavia! Seja bem-vinda ao PHP! 🚀";
+
+🔍 Quebrando o comando
+php → Chama o interpretador do PHP.
+-S → Significa "Start server", ou seja, inicia um servidor web.
+localhost:8000 → Define que o servidor vai rodar no endereço localhost (seu próprio computador) na porta 8000
+
+2️⃣ Variáveis e Tipos de Dados no PHP
+As variáveis no PHP sempre começam com $ e podem armazenar diferentes tipos de valores. Vamos ver os principais:
+
+Tipo de Dado	          Exemplo	                Descrição
+String (texto)	        $nome = "Flavia";	      Armazena textos
+Integer (inteiro)	      $idade = 25;	          Armazena números inteiros
+Float (decimal)        	$altura = 1.58;	        Armazena números com ponto decimal
+Boolean (true/false)	  $programadora = true;	  Define verdadeiro ou falso
+
+📌 Exemplo de código com variáveis:
+
+<?php
+  $nome = "Flavia";
+  $idade = 28;
+  $altura = 1.77;
+  $programadora = true;
+
+  echo "Meu nome é $nome, tenho $idade anos e minha altura é $altura m.<br>";
+
+  // Verifica se a pessoa é programadora
+  if ($programadora) {
+      echo " Eu sou programadora!";
+  }
+?>
+
+Explicação:
+
+$ = Declara uma variável. Ele diferencia variáveis de palavras comuns, funções, strings etc.
+Toda vez que você quiser usar, modificar ou imprimir o valor de uma variável, você usa o $ antes do nome dela.
+🚨 Importante:
+Variáveis em PHP são case-sensitive:
+$nome, $Nome e $NOME são coisas diferentes!
+O nome da variável não pode começar com número e não pode ter espaços: 
+❌ $2coisas
+✅ $duas_coisas
+
+echo =  comando echo serve para imprimir algo na tela 
+<br> = em PHP quando usamos web utilizamos <br> para darmos uma quebra de linha 
+if = estrutura de condicional | verifica se a condição é verdadeira = (if = se) ou seja, se a pessoa é programadora ele vai imprimir a mensagem colocada, se não ele ignora 
+
+
+# Da mesma forma que fizemos anteriormente se quiser só visualizar:
+
+cat nomedoarquivosalvo.php 
+
+# Porém o que muda agora é na hora de ver na web, o primeiro passo para iniciar segue normal:
+
+php -S localhost:8000
+
+# Mais ao acessar na web mudamos para o nome atual do arquivo, exemplo:
+
+http://localhost:8000/primeiroexercicio.php
+
+# Observação: caso você queira rodar no terminal para ver a saída tem como, porém temos que fazer uma pequena alteração:
+<br> se torna \n , visto que a quebra de linha com <br> é para navegadores. 
+E para rodar o arquivo:
+php nomedoarquivo.php
