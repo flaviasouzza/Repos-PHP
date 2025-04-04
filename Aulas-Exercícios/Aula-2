@@ -1,1 +1,97 @@
+# Aula 2 – Operadores, Condições e Estruturas de Controle
 
+📚 2️⃣ Aula 2 – Operadores, Condicionais e Controle de Fluxo
+🔢 Operadores em PHP
+Operadores são símbolos usados para realizar operações em variáveis e valores. Em PHP, os principais são:
+
+
+
+Tipo              Exemplo                      Explicação
+
+Aritméticos       +, -, *, /, %                Usados para cálculos (soma, subtração, multiplicação, divisão, resto)
+Atribuição        =, +=, -=, *=, /=            Atribuem valores a variáveis (atribui o valor, soma um valor, subtrai um valor, multiplica um valor, divide um valor da variável)
+Comparação        ==, !=, >, <, >=, <=         Comparam dois valores (verifica se os valores são iguais, diferentes, maior que, menor que, maior ou igual, menor ou igual — todas retornam true/false)
+Lógicos           &&, ||, !                    Operadores lógicos: E (and), OU (or), NÃO (not)
+
+
+
+🔁 Condicionais - if, else, elseif
+Permitem executar diferentes blocos de código dependendo do valor de uma expressão.
+
+<?php
+$idade = 20;
+
+if ($idade >= 18) {
+  echo "Você é maior de idade.";
+} else {
+  echo "Você é menor de idade.";
+}
+?>
+
+➕ elseif: várias possibilidades
+
+<?php
+$nota = 8;
+
+if ($nota >= 9) {
+  echo "Excelente!";
+} elseif ($nota >= 7) {
+  echo "Bom!";
+} elseif ($nota >= 5) {
+  echo "Regular.";
+} else {
+  echo "Reprovado.";
+}
+?>
+
+🔁 switch: múltiplas opções (alternativa ao if)
+
+<?php
+$dia = "segunda";
+
+switch ($dia) {
+  case "segunda":
+    echo "Início da semana!";
+    break;
+  case "sexta":
+    echo "Sextou!";
+    break;
+  default:
+    echo "Dia normal.";
+}
+?>
+
+
+✅ Mini-desafio 2 – Bora praticar?
+Crie um script chamado condicoes.php que:
+Tenha uma variável chamada $horaAtual
+Se a hora for menor que 12, diga "Bom dia"
+Se for entre 12 e 18, diga "Boa tarde"
+Caso contrário, diga "Boa noite"
+🧠 Dica: você pode simular a hora com $horaAtual = 15;, por exemplo.
+
+Terminal:
+nano condicao.php
+
+Code:
+<?php
+
+$horaAtual = (int) date("H");
+$dia = "Bom dia";
+$tarde = "Boa tarde";
+$noite = "Boa noite"; 
+
+if ($horaAtual  < 12){
+        echo "Olá, $dia!\n";
+} elseif ($horaAtual >=  12 && $horaAtual <= 18){
+        echo "Olá, $tarde\n!";
+} else{
+        echo "Olá, $noite!\n";
+}
+?>
+
+Terminal:
+cat condicao.php // para visualizar o que escreveu 
+php condicao.php // para visualizar a saída 
+
+Observação: usei o \n pois estou testando no terminal direto, mais caso queira utilizar no web troque para <br>
