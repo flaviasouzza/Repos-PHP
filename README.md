@@ -25,6 +25,8 @@ Este repositório tem como objetivo armazenar e organizar aulas, exercícios e a
 
 - No link a seguir você encontra toda documentação do PHP
       - https://www.php.net/manual/pt_BR/
+- Abaixo um pouco mais de documentação
+      - https://www.ibm.com/docs/pt-br/tcamfma/6.3.0?topic=tesl-operators-expressions
 
 ## Atividades para BRINCAR com a linguagem 
 - Abaixo seguem duas plataformas que você pode utilizar para fazer exercícios não só em PHP mais em qualquer outra linguagem que queira:
