@@ -1,0 +1,81 @@
+👩‍💻 Aula 3 – Loops e Repetições
+Hoje vamos aprender a fazer tarefas se repetirem automaticamente, sem precisar copiar e colar mil vezes! Isso é feito com
+os famosos loops.
+
+🔁 Tipos de loops em PHP
+|-------------|------------------------------------------------------------|
+|Tipo	        |   Quando usar                                              |  
+|while	      |   Quando não sabemos quantas vezes vamos repetir           |
+|do...while	  |   Parecido com o while, mas executa pelo menos uma vez     |
+|for	        |   Quando sabemos exatamente quantas vezes queremos repetir |
+|foreach	    |   Para percorrer arrays                                    |
+|--------------------------------------------------------------------------|
+
+# EXEMPLO DE WHILE
+
+<?php
+$contador = 1;                        // 1️⃣ Etapa 1: Começamos com o contador valendo 1
+
+while ($contador <= 5) {              // 2️⃣ Enquanto o contador for menor ou igual a 5, o bloco repete
+    echo "Número: $contador\n";       // 3️⃣ Exibe o número atual do contador
+    $contador++;                      // 4️⃣ Incrementa +1 no contador (ex: vira 2 na próxima repetição)
+}
+?>
+
+Esse código vai contar de 1 a 5.
+
+💡 O que acontece no fundo:
+|-------|-----------------------|--------------------|-----------------|-------------------------|
+|Passo	|  Valor de $contador   |	Verificação <= 5	 | Exibe na tela   | 	Depois faz $contador++ |
+|1	    |  1	                  | Sim                | Número: 1	     |   2                     |
+|2	    |  2	                  | Sim	               | Número: 2	     |   3                     |
+|3	    |  3	                  | Sim	               | Número: 3	     |   4                     |
+|4	    |  4	                  | Sim	               | Número: 4	     |   5                     |
+|5	    |  5	                  | Sim	               | Número: 5	     |   6                     |
+|6	    |  6	                  | Não                |(encerra o loop) |   -                     |  
+|-------|-----------------------|--------------------|-----------------|-------------------------| 
+
+# EXEMPLO DO FOR 
+
+for ($i = 1; $i <= 5; $i++) {
+    echo "Linha: $i\n";
+}
+
+Saída:
+Linha: 1
+Linha: 2
+Linha: 3
+Linha: 4
+Linha: 5
+
+🧠 O que acontece em cada parte?
+|--------------------------|----------------------------------------------| 
+|Parte	                   | Explicação                                   |
+|$i = 1	                   | Começa com o índice valendo 1                |
+|$i <= 5	                 | Enquanto for menor ou igual a 5, executa     |
+|$i++	                     | Ao final de cada repetição, soma +1 ao $i    |
+|echo "Linha: $i\n"      	 | Exibe a linha com o valor atual de $i        |
+|--------------------------|----------------------------------------------|
+
+
+# EXEMPLO COM FOREACHE (pra array)
+
+<?php
+$frutas = ["Maçã", "Banana", "Laranja"];      // Criou um array com 3 elementos (índices: 0, 1, 2)
+
+foreach ($frutas as $fruta) {                 // Para cada item em $frutas, armazena o valor atual na variável $fruta
+    echo "Fruta: $fruta\n";                   // Exibe o valor da fruta atual
+}
+?>
+
+Saída:
+Fruta: Maçã
+Fruta: Banana
+Fruta: Laranja
+
+💬 Explicação passo a passo:
+- $frutas é um array contendo: "Maçã", "Banana" e "Laranja"
+- foreach percorre cada item do array.
+- A cada iteração, $fruta recebe o valor do item atual.
+- echo imprime esse valor na tela.
+- ele imprime um por linha, conforme percorre o array.(por isso a saída é as três frutas)
