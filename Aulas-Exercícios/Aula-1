@@ -57,11 +57,13 @@ localhost:8000 → Define que o servidor vai rodar no endereço localhost (seu p
 2️⃣ Variáveis e Tipos de Dados no PHP
 As variáveis no PHP sempre começam com $ e podem armazenar diferentes tipos de valores. Vamos ver os principais:
 
-Tipo de Dado	          Exemplo	                Descrição
-String (texto)	        $nome = "Flavia";	      Armazena textos
-Integer (inteiro)	      $idade = 25;	          Armazena números inteiros
-Float (decimal)        	$altura = 1.58;	        Armazena números com ponto decimal
-Boolean (true/false)	  $programadora = true;	  Define verdadeiro ou falso
+|---------------------|--------------------------|---------------------------------------|
+|Tipo de Dado	        |    Exemplo	             |    Descrição                          |
+|String (texto)	      |    $nome = "Flavia";	   |    Armazena textos                    |
+|Integer (inteiro)	  |    $idade = 25;	         |    Armazena números inteiros          |
+|Float (decimal)      |  	 $altura = 1.58;	     |    Armazena números com ponto decimal |
+|Boolean (true/false) |	   $programadora = true; |	  Define verdadeiro ou falso         |
+|---------------------|--------------------------|---------------------------------------|
 
 📌 Exemplo de código com variáveis:
 
