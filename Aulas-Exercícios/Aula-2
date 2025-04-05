@@ -5,14 +5,18 @@
 Operadores são símbolos usados para realizar operações em variáveis e valores. Em PHP, os principais são:
 
 
-
-Tipo              Exemplo                      Explicação
-
-Aritméticos       +, -, *, /, %                Usados para cálculos (soma, subtração, multiplicação, divisão, resto)
-Atribuição        =, +=, -=, *=, /=            Atribuem valores a variáveis (atribui o valor, soma um valor, subtrai um valor, multiplica um valor, divide um valor da variável)
-Comparação        ==, !=, >, <, >=, <=         Comparam dois valores (verifica se os valores são iguais, diferentes, maior que, menor que, maior ou igual, menor ou igual — todas retornam true/false)
-Lógicos           &&, ||, !                    Operadores lógicos: E (and), OU (or), NÃO (not)
-
+|----------------|------------------------|-------------------------------------------------------------------------------------------|
+|Tipo            |  Exemplo               |      Explicação                                                                           |
+|Aritméticos        +, -, *, /, %                Usados para cálculos (soma, subtração, multiplicação, divisão, resto)                |
+|----------------|------------------------|-------------------------------------------------------------------------------------------|
+|Atribuição         =, +=, -=, *=, /=            Atribuem valores a variáveis (atribui o valor, soma um valor, subtrai um valor,      |
+|                                                multiplica um valor, divide um valor da variável)                                    |
+|----------------|------------------------|-------------------------------------------------------------------------------------------|
+|Comparação         ==, !=, >, <, >=, <=         Comparam dois valores (verifica se os valores são iguais, diferentes, maior que,     |
+|                                                 menor que, maior ou igual, menor ou igual — todas retornam true/false)              |
+|----------------|------------------------|-------------------------------------------------------------------------------------------|
+|Lógicos         |  &&, ||, !             |      Operadores lógicos: E (and), OU (or), NÃO (not)                                      |
+|----------------|------------------------|-------------------------------------------------------------------------------------------|
 
 
 🔁 Condicionais - if, else, elseif
