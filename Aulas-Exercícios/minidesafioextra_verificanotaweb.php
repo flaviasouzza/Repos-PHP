@@ -75,6 +75,6 @@ if (isset($_GET['nota'])) {       // Anteriormente usamos readline(que é para t
 }
 ?>
 
-// abaixo enceramos o html 
+// abaixo encerramos o html 
 </body>
 </html>
