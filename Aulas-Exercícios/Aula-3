@@ -58,7 +58,7 @@ Linha: 5
 |--------------------------|----------------------------------------------|
 
 
-# EXEMPLO COM FOREACHE (pra array)
+# EXEMPLO COM FOREACH (pra array)
 
 <?php
 $frutas = ["Maçã", "Banana", "Laranja"];      // Criou um array com 3 elementos (índices: 0, 1, 2)
