@@ -33,49 +33,49 @@ Abaixo está uma lista das funções mais comuns em PHP, divididas por categoria
 
 🧠 Funções de String (texto)
 |----------------|--------------------------------------------|-----------------------------------------------|
-| Função	       | O que faz	                                | Exemplo                                       |
+| Função	     | O que faz	                              | Exemplo                                       |
 | strlen()	     | Conta quantos caracteres tem uma string	  | strlen("Flavia") // 6                         |
 | strtoupper()	 | Converte tudo para MAIÚSCULO	              | strtoupper("olá") // OLÁ                      |
 | strtolower()	 | Converte tudo para minúsculo	              | strtolower("OLÁ") // olá                      |
 | ucfirst()	     | Primeira letra em maiúsculo	              | ucfirst("flavia") // Flavia                   |
-| str_replace()	 | Substitui partes do texto	                | str_replace("a", "x", "banana") // bxnxnx     |
-| trim()	       | Remove espaços do começo e fim	            | trim(" oi ") // "oi"                          |
+| str_replace()	 | Substitui partes do texto	              | str_replace("a", "x", "banana") // bxnxnx     |
+| trim()	     | Remove espaços do começo e fim	          | trim(" oi ") // "oi"                          |
 |----------------|--------------------------------------------|-----------------------------------------------|
 
 🔢 Funções Numéricas
 |--------------|----------------------------------|-------------------------------| 
-| Função	     | O que faz	                      |  Exemplo                      |
+| Função	   | O que faz	                      |  Exemplo                      |
 | abs()	       | Valor absoluto (positivo)	      |  abs(-5) // 5                 |
-| round()	     | Arredonda o número	              |  round(3.6) // 4              |
-| ceil()	     | Arredonda pra cima	              |  ceil(3.1) // 4               |
-| floor()	     | Arredonda pra baixo	            |  floor(3.9) // 3              |
-| rand()	     | Número aleatório	                |  rand(1, 10) // entre 1 e 10  |
+| round()	   | Arredonda o número	              |  round(3.6) // 4              |
+| ceil()	   | Arredonda pra cima	              |  ceil(3.1) // 4               |
+| floor()	   | Arredonda pra baixo	          |  floor(3.9) // 3              |
+| rand()	   | Número aleatório	              |  rand(1, 10) // entre 1 e 10  |
 |--------------|----------------------------------|-------------------------------|
 
 🔁 Funções de Array
 |----------------|--------------------------------------------|--------------------------|
-|Função	         | O que faz	                                |    Exemplo               |
-|count()	       | Conta quantos elementos tem um array	      | count([1,2,3]) // 3      |
+|Função	         | O que faz	                              |    Exemplo               |
+|count()	     | Conta quantos elementos tem um array	      | count([1,2,3]) // 3      |
 |array_push()    |	Adiciona item no final do array	          | array_push($arr, "novo") |
-|array_pop()	   | Remove o último item do array	            | array_pop($arr)          |
-|in_array()	     | Verifica se um valor está no array	        | in_array("maçã", $frutas)|
+|array_pop()	 | Remove o último item do array	          | array_pop($arr)          |
+|in_array()	     | Verifica se um valor está no array	      | in_array("maçã", $frutas)|
 |array_merge()	 | Junta dois arrays  	                      | array_merge($a1, $a2)    |
 |----------------|--------------------------------------------|--------------------------|
 
 📦 Funções de Variáveis
 |-----------------|----------------------------------------------|--------------------------|
-|Função	          | O que faz	                                   | Exemplo                  |
-|isset()	        | Verifica se a variável existe/não é null	   | isset($nome)             |
-|empty()	        | Verifica se está vazia	                     | empty($valor)            |
+|Função	          | O que faz	                                 | Exemplo                  |
+|isset()	      | Verifica se a variável existe/não é null	 | isset($nome)             |
+|empty()	      | Verifica se está vazia	                     | empty($valor)            |
 |is_array()	      | Verifica se é um array                       | is_array($dados)         |
-|is_numeric()	    | Verifica se é número                         | is_numeric("10") // true |
+|is_numeric()	  | Verifica se é número                         | is_numeric("10") // true |
 |-----------------|----------------------------------------------|--------------------------|
 
 💥 Funções de Debug (testes)
 |-------------|---------------------------------------|---------------------|
-| Função	    | O que faz	                            | Exemplo             |
-| print_r()	  | Mostra arrays/objetos de forma clara	| print_r($meuArray)  |
-| var_dump()	| Mostra tipo e valor	                  | var_dump($idade)    |
+| Função	  | O que faz	                          | Exemplo             |
+| print_r()	  | Mostra arrays/objetos de forma clara  | print_r($meuArray)  |
+| var_dump()  | Mostra tipo e valor	                  | var_dump($idade)    |
 |-------------|---------------------------------------|---------------------|
 
 🔹 1. Tipos de Dados 🔥🔥🔥
