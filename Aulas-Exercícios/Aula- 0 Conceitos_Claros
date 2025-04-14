@@ -1,1 +1,114 @@
+1. Variável
+Uma variável é um espaço na memória que guarda um valor. Em PHP, toda variável começa com $.
 
+$nome = "Flavia"; // variável que guarda uma string
+$idade = 28;      // variável que guarda um número
+🧠 Como reconhecer: Começa com $, seguido por nome. É sempre usada para armazenar valores.
+
+
+2. String
+Uma string é um conjunto de caracteres, geralmente texto. Pode estar entre aspas simples ou duplas.
+
+$mensagem = "Olá, mundo!";
+🧠 Como reconhecer: Está entre aspas (" " ou ' '), e normalmente representa um texto.
+
+3. Array
+Um array guarda uma coleção de valores (lista).
+
+$frutas = ["Maçã", "Banana", "Laranja"];
+🧠 Como reconhecer: Usa [] para guardar vários valores.
+
+4. Função
+Uma função executa uma tarefa. Pode ser uma função do PHP ou uma que você cria.
+
+function saudacao($nome) {
+    return "Olá, $nome!";
+}
+
+echo saudacao("Flavia");
+🧠 Como reconhecer: Começa com a palavra function, tem parênteses () e pode ter return.
+Nem toda função precisa começar com a palavra function, porque existem dois tipos de funções que você pode usar:
+
+Abaixo está uma lista das funções mais comuns em PHP, divididas por categoria, com explicações simples e exemplos que você pode colar no seu Git como mini-guia ⚡
+
+🧠 Funções de String (texto)
+|----------------|--------------------------------------------|-----------------------------------------------|
+| Função	       | O que faz	                                | Exemplo                                       |
+| strlen()	     | Conta quantos caracteres tem uma string	  | strlen("Flavia") // 6                         |
+| strtoupper()	 | Converte tudo para MAIÚSCULO	              | strtoupper("olá") // OLÁ                      |
+| strtolower()	 | Converte tudo para minúsculo	              | strtolower("OLÁ") // olá                      |
+| ucfirst()	     | Primeira letra em maiúsculo	              | ucfirst("flavia") // Flavia                   |
+| str_replace()	 | Substitui partes do texto	                | str_replace("a", "x", "banana") // bxnxnx     |
+| trim()	       | Remove espaços do começo e fim	            | trim(" oi ") // "oi"                          |
+|----------------|--------------------------------------------|-----------------------------------------------|
+
+🔢 Funções Numéricas
+|--------------|----------------------------------|-------------------------------| 
+| Função	     | O que faz	                      |  Exemplo                      |
+| abs()	       | Valor absoluto (positivo)	      |  abs(-5) // 5                 |
+| round()	     | Arredonda o número	              |  round(3.6) // 4              |
+| ceil()	     | Arredonda pra cima	              |  ceil(3.1) // 4               |
+| floor()	     | Arredonda pra baixo	            |  floor(3.9) // 3              |
+| rand()	     | Número aleatório	                |  rand(1, 10) // entre 1 e 10  |
+|--------------|----------------------------------|-------------------------------|
+
+🔁 Funções de Array
+|----------------|--------------------------------------------|--------------------------|
+|Função	         | O que faz	                                |    Exemplo               |
+|count()	       | Conta quantos elementos tem um array	      | count([1,2,3]) // 3      |
+|array_push()    |	Adiciona item no final do array	          | array_push($arr, "novo") |
+|array_pop()	   | Remove o último item do array	            | array_pop($arr)          |
+|in_array()	     | Verifica se um valor está no array	        | in_array("maçã", $frutas)|
+|array_merge()	 | Junta dois arrays  	                      | array_merge($a1, $a2)    |
+|----------------|--------------------------------------------|--------------------------|
+
+📦 Funções de Variáveis
+|-----------------|----------------------------------------------|--------------------------|
+|Função	          | O que faz	                                   | Exemplo                  |
+|isset()	        | Verifica se a variável existe/não é null	   | isset($nome)             |
+|empty()	        | Verifica se está vazia	                     | empty($valor)            |
+|is_array()	      | Verifica se é um array                       | is_array($dados)         |
+|is_numeric()	    | Verifica se é número                         | is_numeric("10") // true |
+|-----------------|----------------------------------------------|--------------------------|
+
+💥 Funções de Debug (testes)
+|-------------|---------------------------------------|---------------------|
+| Função	    | O que faz	                            | Exemplo             |
+| print_r()	  | Mostra arrays/objetos de forma clara	| print_r($meuArray)  |
+| var_dump()	| Mostra tipo e valor	                  | var_dump($idade)    |
+|-------------|---------------------------------------|---------------------|
+
+🔹 1. Tipos de Dados 🔥🔥🔥
+String, Integer, Float, Boolean, Array, Object
+Saber que tipo de valor está lidando (texto, número, verdadeiro/falso etc.)
+
+🔹 2. Operadores 🔥🔥
+Matemáticos: +, -, *, /, %
+Comparação: ==, !=, >, <, >=, <=
+Lógicos: &&, ||, !
+
+🔹 3. Condicionais (if, else, switch) 🔥🔥🔥
+Pra executar algo dependendo de uma condição
+
+🔹 4. Laços de repetição (for, while, foreach) 🔥🔥🔥
+Pra repetir uma tarefa várias vezes
+
+🔹 5. Funções 🔥🔥🔥
+Você já viu isso hoje! Criar pedaços reutilizáveis de código
+
+🔹 6. Arrays e Arrays Associativos 🔥🔥🔥
+Lista de valores simples
+E também listas com chaves personalizadas:
+$pessoa = ["nome" => "Flavia", "idade" => 28];
+
+🔹 7. Superglobais (começar a ver depois) 🔥
+$_POST, $_GET, $_SESSION, $_SERVER — super importantes pra web
+
+🔹 8. Manipulação de Strings e Arrays 🔥
+Funções como strlen, explode, implode, strtoupper, strtolower...
+
+🔹 9. Formulários com PHP (POST e GET) 🔥🔥
+Mandar dados do navegador para o PHP
+
+🔹 10. Validação de dados
+Conferir se um campo está preenchido, se o dado é válido...
